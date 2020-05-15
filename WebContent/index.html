@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chocoholic</title>
+<link rel="stylesheet" href="style.css">
+<!-- Link the style.css to this HTML file -->
+
+</head>
+
+<body>
+<div>
+  <form class="container">
+<h1>
+Chocoholic Gourmet Chocolate 
+</h1>
+
+<h2>Add to to your mouth as many of these decadent chocolates that you would like.
+</h2>
+
+
+	<table>
+
+		<tr>
+			<th><h4>Brand</h4></th>
+			<th><h4>Description</h4></th>
+			<th><h4>Price</h4></th>
+			<th></th>
+		</tr>
+		
+		<tr>
+			<td>GODIVA</td>
+			<td>Belgium: Truffle filled with Ganache</td>
+			<td>$4.00</td>
+			<td><input id ="btn" type="button" value="Add Item"
+				onclick="addToCart('GODIVA: Truffle', 4.00)" /></td>
+		</tr>
+		
+		<tr>
+			<td>RICHART</td>
+			<td>French: Dark Chocolate 100% single-origin Cocoa</td>
+			<td>$15.00</td>
+			<td><input id ="btn" type="button" value="Add Item"
+				onclick="addToCart('RICHART: Dark', 15.00)" /></td>
+		</tr>
+		
+		<tr>
+			<td>MOONSTRUCK</td>
+			<td>Oregon: Gold Spice Truffle dusted in Roasted Almonds</td>
+			<td>$3.00</td>
+			<td><input id ="btn" type="button" value="Add Item"
+				onclick="addToCart('MOONSTRUCK: Gold Dust', 3.00)" /></td>
+		</tr>
+		
+		<tr>
+			<td>MOONSTRUCK</td>
+			<td>Oregon: Raspberry Thicket Truffle covered in Dark Chocolate</td>
+			<td>$3.00</td>
+			<td><input id ="btn" type="button" value="Add Item"
+				onclick="addToCart('MOONSTRUCK: Rasberry', 3.00)" /></td>
+		</tr>
+		
+		<tr>
+			<td>CHRIS NORMAN</td>
+			<td>Bristish Colombia: Mocha Dot Dark Chocolate</td>
+			<td>$7.00</td>
+			<td><input id ="btn" type="button" value="Add Item"
+				onclick="addToCart('CHRIS NORMAN: Mocha', 7.00)" /></td>
+		</tr>
+		
+	</table>
+	
+	<input id ="btn2" type ="button" value ="Change Order" onclick= "clearCart()"/>
+	<br>
+	<br>
+	<input id ="btn3" type ="button" value ="Checkout" onclick= "printCart()"/>
+	
+	
+	<p id="demo"></p>
+	
+	<p id="finalCart"></p>
+	
+	
+
+	</form>
+	</div>
+	
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
